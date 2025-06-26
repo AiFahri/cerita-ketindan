@@ -3,10 +3,12 @@ import CountdownPage from "../pages/CountdownPage";
 import Home from "../pages/Home";
 // import DetailPage from "../pages/DetailPage";
 import NotFound from "../pages/NotFound";
+import Analytics from "../components/Analytics";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+      <Analytics />
       <Routes>
         <Route path="/" element={<CountdownPage />} />
         <Route path="/home" element={<Home />} />
