@@ -15,7 +15,7 @@ const NotFound = () => {
         </div>
 
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-primary mb-4">
             Halaman Tidak Ditemukan
           </h2>
           <p className="text-gray-600 text-lg">

@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({
   return (
     <footer className="mt-auto z-30 relative shrink-0">
       <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 md:px-8 pb-3 sm:pb-4 space-y-2 sm:space-y-0 text-center sm:text-left">
-        <div className="flex items-center justify-center sm:justify-start space-x-2 text-amber-800 order-2 sm:order-1">
+        <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary order-2 sm:order-1">
           <svg
             width="18"
             height="18"
@@ -31,12 +31,12 @@ const Footer: React.FC<FooterProps> = ({
         </div>
 
         <div className="text-center order-1 sm:order-2">
-          <p className="text-sm sm:text-base text-amber-800 font-medium font-serif">
+          <p className="text-sm sm:text-base text-primary font-medium font-serif">
             {copyright}
           </p>
         </div>
 
-        <div className="flex items-center justify-center sm:justify-end space-x-2 text-amber-800 order-3">
+        <div className="flex items-center justify-center sm:justify-end space-x-2 text-primary order-3">
           <svg
             width="18"
             height="18"
