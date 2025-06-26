@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer";
 import { heroSlides } from "../data/sliderData";
-import background from "../assets/background.png";
+// import background from "../assets/background.png";
 
 const Home: React.FC = () => {
   return (

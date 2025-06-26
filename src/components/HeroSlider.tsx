@@ -12,7 +12,7 @@ interface HeroSliderProps {
 const HeroSlider: React.FC<HeroSliderProps> = ({
   slides,
   title = "Desa Ketindan: Jejak Tradisi dan Warisan Leluhur",
-  subtitle = "Menjelajahi kekayaan budaya dan sejarah yang terpelihara dengan baik",
+  // subtitle = "Menjelajahi kekayaan budaya dan sejarah yang terpelihara dengan baik",
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
