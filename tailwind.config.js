@@ -1,16 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    // Add any other locations where you use Tailwind classes
+  ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#654628",
+          light: "#8a6c4a",
+          dark: "#4a3420",
+        },
+        secondary: "#E91B1B",
+      },
       screens: {
         xs: "475px",
-        sm: "640px", 
-        md: "768px", 
-        lg: "1024px", 
-        xl: "1280px", 
-        "2xl": "1536px", 
-        "3xl": "1920px", 
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1920px",
       },
       fontFamily: {
         serif: ["Noto Serif", "serif"],
