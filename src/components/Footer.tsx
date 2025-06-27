@@ -9,7 +9,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({
   phone = "+628123456789",
-  copyright = "Copyright © Sadewa 2025",
+  copyright = "Developed by Sadewa UB Bakti BCA Awardee 2025",
   instagram = "@pakdesadewa.berbakti",
 }) => {
   return (
