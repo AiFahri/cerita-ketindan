@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSlider from "../components/HeroSlider";
 import SejarahSection from "../components/SejarahSection";
 import PeninggalanSection from "../components/PeninggalanSection";
+import VirtualTourSection from "../components/VirtualTourSection";
 import Footer from "../components/Footer";
 import { heroSlides } from "../data/sliderData";
 import Tentangsection from "../components/TentangSection";
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
       <PeninggalanSection id="peninggalan" />
       <WisataSection id="wisata" />
       <UMKMSection id="umkm" />
+      <VirtualTourSection id="virtual-tour" />
       <Footer />
     </div>
   );
