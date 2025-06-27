@@ -1,6 +1,7 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { wisataData } from "../data/wisataData";
 import { peninggalanData } from "../data/peninggalan";
+import { UMKMData } from "../data/UMKMData";
 
 const DetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -14,6 +15,8 @@ const DetailPage = () => {
       return wisataData.find((item) => item.slug === slug);
     } else if (path.includes("/peninggalan/")) {
       return peninggalanData.find((item) => item.slug === slug);
+    } else if (path.includes("/umkm/")) {
+      return UMKMData.find((item) => item.slug === slug);
     }
 
     return null;
