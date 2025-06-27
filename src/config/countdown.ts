@@ -14,7 +14,7 @@ export const COUNTDOWN_CONFIG = {
   CONTACT: {
     phone: "Ketindan, Lawang, Kabupaten Malang",
     instagram: "@pakdesadewa.berbakti",
-    copyright: "Developed by Tim Sadewa UB — Bakti BCA Awardee 2025 ",
+    copyright: "Developed by Tim Sadewa UB - Bakti BCA Awardee",
   },
 
   REDIRECT: {

@@ -51,7 +51,7 @@ const CountdownPage: React.FC<CountdownPageProps> = ({
         <img
           src={ornamentBottom}
           alt="Ornament Bottom"
-          className="absolute bottom-20 sm:bottom-14 md:bottom-16 left-0 w-full h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 object-cover transform scale-x-[-1]"
+          className="absolute bottom-24 sm:bottom-14 md:bottom-16 left-0 w-full h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 object-cover transform scale-x-[-1]"
         />
       </div>
 
