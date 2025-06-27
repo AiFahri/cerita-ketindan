@@ -10,7 +10,7 @@ interface CardProps {
   category?: string;
   year?: string;
   location?: string;
-  basePath?: string; 
+  basePath?: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -56,7 +56,7 @@ const Card: React.FC<CardProps> = ({
 
       <div
         className="absolute left-1/12 transform -translate-x-1/12 z-10"
-        style={{ bottom: "-3rem" }}
+        style={{ bottom: "-3.2rem" }}
       >
         <img
           src={bottomCard}

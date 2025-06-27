@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({
 }) => {
   return (
     <footer className="mt-auto z-30 relative shrink-0">
-      <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 md:px-8 pb-3 sm:pb-4 space-y-2 sm:space-y-0 text-center sm:text-left">
+      <div className="flex flex-col bg-gradient-to-t from-stone-50 to-stone-50 sm:flex-row justify-between items-center px-4 sm:px-6 md:px-8 pb-3 sm:pb-4 space-y-2 sm:space-y-0 text-center sm:text-left">
         <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary order-2 sm:order-1">
           <img src={locationMap} alt="Location Map" className="w-5 h-6" />
           <span className="text-sm sm:text-base font-medium font-serif">
