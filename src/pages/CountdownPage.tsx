@@ -6,10 +6,10 @@ import Footer from "../components/Footer";
 import { COUNTDOWN_CONFIG } from "../config/countdown";
 import ornamentLeft from "../assets/ornament-left.png";
 import ornamentRight from "../assets/ornament-right.png";
-import ornamentBottom from "../assets/ornament-bottom.svg";
+import ornamentBottom from "../assets/ornament-bottom.png";
 // import ornamentBottom from "../assets/ornament-bottom.png";
 import ornamentMid from "../assets/ornament-mid.svg";
-import bgLogo from "../assets/bg-logo.svg";
+import bgLogo from "/logo sadewa.png";
 import background from "../assets/background.png";
 
 interface CountdownPageProps {
