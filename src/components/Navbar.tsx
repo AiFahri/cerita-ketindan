@@ -23,6 +23,21 @@ const Navbar: React.FC<NavbarProps> = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const scrollToHashElement = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 500);
+      }
+    };
+    scrollToHashElement();
+  }, []);
+
   const handleNavClick = (href: string, isExternal?: boolean) => {
     if (!isExternal && href.startsWith("#")) {
       const element = document.querySelector(href);
