@@ -88,10 +88,9 @@ export const navigationItems: NavItem[] = [
     label: "UMKM",
     href: "#umkm",
   },
-  // {
-  //   id: "virtual-tour",
-  //   label: "Tentang Kami",
-  //   href: "/ketindantrad",
-  //   isExternal: true,
-  // },
+  {
+    id: "virtual-tour",
+    label: "Virtual Tour",
+    href: "#virtual-tour",
+  },
 ];
