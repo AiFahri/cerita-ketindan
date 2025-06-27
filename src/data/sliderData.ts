@@ -1,4 +1,8 @@
 import background from "../assets/trad.png";
+import desawisata from "/desa wisata.jpg";
+import gapura from "/gapura.jpg";
+import kolam from "/kolam renang.jpg";
+import prasasti from "/prasasti-katiden-1.jpg";
 
 export interface SlideData {
   id: number;
@@ -11,46 +15,37 @@ export interface SlideData {
 export const heroSlides: SlideData[] = [
   {
     id: 1,
-    title: "Jejak Tradisi dan Warisan Leluhur",
-    description:
-      "Desa Ketindan dalam lintasan sejarah dan budaya yang kaya akan nilai-nilai luhur.",
+    title: "",
+    description: "",
     imageUrl: background,
     alt: "Tradisi dan Warisan Leluhur Desa Ketindan",
   },
   {
     id: 2,
-    title: "Alam dan Inovasi",
-    description:
-      "Keseimbangan harmonis antara kearifan lokal dan kemajuan modern.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    title: "",
+    description: "",
+    imageUrl: desawisata,
     alt: "Alam dan Inovasi Desa Ketindan",
   },
   {
     id: 3,
-    title: "UMKM Berkembang",
-    description:
-      "Produk lokal berkualitas tinggi yang mendunia dari tangan terampil warga Ketindan.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop",
+    title: "",
+    description: "",
+    imageUrl: gapura,
     alt: "UMKM Desa Ketindan",
   },
   {
     id: 4,
-    title: "Wisata Budaya",
-    description:
-      "Destinasi wisata yang memadukan keindahan alam dengan kekayaan budaya lokal.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+    title: "",
+    description: "",
+    imageUrl: kolam,
     alt: "Wisata Budaya Desa Ketindan",
   },
   {
     id: 5,
-    title: "Peninggalan Bersejarah",
-    description:
-      "Situs-situs bersejarah yang menjadi saksi bisu perjalanan panjang Desa Ketindan.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop",
+    title: "",
+    description: "",
+    imageUrl: prasasti,
     alt: "Peninggalan Bersejarah Desa Ketindan",
   },
 ];
