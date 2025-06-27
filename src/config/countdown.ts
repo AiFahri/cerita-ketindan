@@ -12,9 +12,9 @@ export const COUNTDOWN_CONFIG = {
   },
 
   CONTACT: {
-    phone: "+628123456789",
+    phone: "Ketindan, Lawang, Kabupaten Malang",
     instagram: "@pakdesadewa.berbakti",
-    copyright: "Copyright © Sadewa 2025",
+    copyright: "Developed by Tim Sadewa UB — Bakti BCA Awardee 2025 ",
   },
 
   REDIRECT: {

@@ -8,7 +8,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({
-  logoSrc = "/src/assets/bg-logo.svg",
+  logoSrc = "/favicon.ico",
   siteName = "Cerita Ketindan",
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           <Link
-            to="/"
+            to="/home"
             className="flex items-center space-x-3 group"
             onClick={() => handleNavClick("#hero")}
           >

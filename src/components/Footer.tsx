@@ -1,4 +1,5 @@
 import React from "react";
+import locationMap from "../assets/location_map.png";
 // import ornamentBottom from "../assets/ornament-bottom.svg";
 
 interface FooterProps {
@@ -8,23 +9,15 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({
-  phone = "+628123456789",
-  copyright = "Developed by Sadewa UB Bakti BCA Awardee 2025",
+  phone = "Ketindan, Lawang, Kabupaten Malang  ",
+  copyright = "Developed by Tim Sadewa UB — Bakti BCA Awardee 2025 ",
   instagram = "@pakdesadewa.berbakti",
 }) => {
   return (
     <footer className="mt-auto z-30 relative shrink-0">
       <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 md:px-8 pb-3 sm:pb-4 space-y-2 sm:space-y-0 text-center sm:text-left">
         <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary order-2 sm:order-1">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="opacity-70"
-          >
-            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-          </svg>
+          <img src={locationMap} alt="Location Map" className="w-5 h-6" />
           <span className="text-sm sm:text-base font-medium font-serif">
             {phone}
           </span>

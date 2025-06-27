@@ -53,7 +53,7 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
           <div className="space-y-8">
             {sejarahDesa.paragraphs.map((paragraph, index) => (
               <div key={index} className="relative">
-                {index === 0 && (
+                {index === -1 && (
                   <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-amber-600 to-orange-600 rounded-full opacity-60" />
                 )}
 
@@ -61,7 +61,7 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
                   className={`
                   text-justify leading-relaxed px-4 sm:px-6 lg:px-8
                   ${
-                    index === 0
+                    index === -1
                       ? "text-xl sm:text-2xl lg:text-3xl font-medium text-amber-900 font-display mb-8"
                       : "text-lg sm:text-xl text-amber-800 font-sans"
                   }
