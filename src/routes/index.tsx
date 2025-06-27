@@ -14,6 +14,7 @@ const AppRoutes = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/wisata/:slug" element={<DetailPage />} />
         <Route path="/peninggalan/:slug" element={<DetailPage />} />
+        <Route path="/umkm/:slug" element={<DetailPage />} />
         <Route path="/sejarah/:slug" element={<DetailPage />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
