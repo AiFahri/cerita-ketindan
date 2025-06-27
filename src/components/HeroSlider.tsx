@@ -11,7 +11,7 @@ interface HeroSliderProps {
 
 const HeroSlider: React.FC<HeroSliderProps> = ({
   slides,
-  title = "Desa Ketindan: Jejak Tradisi dan Warisan Leluhur",
+  // title = "Desa Ketindan Wisata, Jejak Tradisi, dan Warisan Leluhur",
   // subtitle = "Menjelajahi kekayaan budaya dan sejarah yang terpelihara dengan baik",
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -56,9 +56,9 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
     const isActive = position === 0;
     const absPosition = Math.abs(position);
 
-    const translateX = position * 120; 
+    const translateX = position * 120;
     const translateZ = isActive ? 0 : -100 - (absPosition - 1) * 50;
-    const rotateY = position * -25; 
+    const rotateY = position * -25;
     const scale = isActive ? 1 : Math.max(0.7, 1 - absPosition * 0.15);
     const opacity = absPosition > 2 ? 0 : Math.max(0.3, 1 - absPosition * 0.3);
 
@@ -70,7 +70,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-stone-50 to-stone-200 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-stone-50 to-stone-50 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={background}
@@ -92,7 +92,8 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-0 sm:mb-0 max-w-4xl">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-tertiary font-serif leading-tight mb-4">
-            {title}
+            Desa Ketindan
+            <h1>Wisata, Jejak Tradisi, dan Warisan Leluhur</h1>
           </h1>
           {/* <p className="text-lg sm:text-xl text-amber-700 font-serif max-w-2xl mx-auto">
             {subtitle}
@@ -102,7 +103,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
         <div className="relative w-full max-w-6xl">
           <div
             ref={sliderRef}
-            className="relative h-64 sm:h-80 lg:h-96 mx-auto"
+            className="relative h-56 sm:h-72 lg:h-96 mx-auto"
             style={{
               perspective: "1200px",
               perspectiveOrigin: "center center",
@@ -112,13 +113,13 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
               {slides.map((slide, index) => (
                 <div
                   key={slide.id}
-                  className={`absolute w-48 sm:w-64 lg:w-96 h-48 sm:h-64 lg:h-80 cursor-pointer transition-all duration-500 ease-out ${
+                  className={`absolute w-56 h-40 sm:w-56 sm:h-56 lg:w-96 lg:h-72 cursor-pointer transition-all duration-500 ease-out ${
                     isTransitioning ? "pointer-events-none" : ""
                   }`}
                   style={getSlideStyle(index)}
                   onClick={() => goToSlide(index)}
                 >
-                  <div className="relative w-full lg:h-64 rounded-2xl overflow-hidden shadow-2xl group">
+                  <div className="relative w-full h-36 sm:h-56 lg:h-60 rounded-2xl overflow-hidden shadow-2xl group">
                     <img
                       src={slide.imageUrl}
                       alt={slide.alt}
@@ -201,7 +202,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
           </div>
         </div>
 
-        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-20 lg:bottom-24 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-amber-900 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-amber-900 rounded-full mt-2 animate-pulse"></div>
           </div>

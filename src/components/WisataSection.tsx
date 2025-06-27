@@ -19,7 +19,7 @@ const WisataSection: React.FC<WisataSectionProps> = ({
   return (
     <section
       id={id}
-      className={`relative py-16 sm:py-20 lg:py-24 overflow-hidden ${className}`}
+      className={`relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-gradient-to-br from-stone-50 to-stone-50 ${className}`}
     >
       <div className="absolute inset-0 z-10">
         <img
@@ -75,7 +75,7 @@ const WisataSection: React.FC<WisataSectionProps> = ({
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-amber-100/30 to-transparent" />
+      {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-amber-100/30 to-transparent" /> */}
     </section>
   );
 };

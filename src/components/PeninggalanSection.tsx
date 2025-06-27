@@ -16,7 +16,10 @@ const PeninggalanSection: React.FC<PeninggalanSectionProps> = ({
   className = "",
 }) => {
   return (
-    <section id={id} className={`relative py-20 ${className}`}>
+    <section
+      id={id}
+      className={`relative py-20 bg-gradient-to-br from-stone-50 to-stone-50${className}`}
+    >
       <div className="absolute inset-0 z-10">
         <img
           src={background}

@@ -7,19 +7,16 @@ import ornamentLeft from "../assets/ornament-left.png";
 import ornamentRight from "../assets/ornament-right.png";
 import background from "../assets/background.png";
 
-interface WisataSectionProps {
+interface UMKMSectionProps {
   id?: string;
   className?: string;
 }
 
-const WisataSection: React.FC<WisataSectionProps> = ({
-  id,
-  className = "",
-}) => {
+const UMKMSection: React.FC<UMKMSectionProps> = ({ id, className = "" }) => {
   return (
     <section
       id={id}
-      className={`relative py-16 sm:py-20 lg:py-24 overflow-hidden ${className}`}
+      className={`relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-gradient-to-br from-stone-50 to-stone-50${className}`}
     >
       <div className="absolute inset-0 z-10">
         <img
@@ -39,7 +36,7 @@ const WisataSection: React.FC<WisataSectionProps> = ({
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-50/80 via-orange-50/60 to-yellow-50/80" />
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-50/80 via-orange-50/60 to-yellow-50/80" /> */}
 
       <div className="absolute inset-0 flex items-center justify-center opacity-10">
         <img src={ornamentMid} alt="" className="w-96 h-96 object-contain" />
@@ -61,7 +58,7 @@ const WisataSection: React.FC<WisataSectionProps> = ({
               description={item.description}
               image={item.image}
               slug={item.slug}
-              basePath="/wisata"
+              basePath="/umkm"
             />
           ))}
         </div>
@@ -76,8 +73,8 @@ const WisataSection: React.FC<WisataSectionProps> = ({
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-amber-100/30 to-transparent" />
-    </section>
+      </section>
   );
 };
 
-export default WisataSection;
+export default UMKMSection;

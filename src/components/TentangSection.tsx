@@ -16,7 +16,7 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
   return (
     <section
       id={id}
-      className={`relative py-16 sm:py-20 lg:py-24 overflow-hidden${className}`}
+      className={`relative py-16 sm:py-20 lg:py-24  bg-gradient-to-br from-stone-50 to-stone-50 overflow-hidden${className}`}
     >
       <div className="absolute inset-0 z-10">
         <img
@@ -26,7 +26,7 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-50/80 via-orange-50/60 to-yellow-50/80" />
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-50/80 via-orange-50/60 to-yellow-50/80" /> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -41,7 +41,7 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
             {tentangDesa.paragraphs.map((paragraph, index) => (
               <div key={index} className="relative">
                 {index === -1 && (
-                  <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-amber-600 to-orange-600 rounded-full opacity-60" />
+                  <div className="absolute -left-4 top-0 w-1 h-full rounded-full opacity-60" />
                 )}
 
                 <p
@@ -83,7 +83,10 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
           )} */}
 
           <div className="mt-16 flex justify-center">
-            <button className=" z-30 bg-primary backdrop-blur-md text-white font-serif px-4 py-2 rounded-lg shadow-md hover:bg-tertiary transition-colors duration-200">
+            <button
+              className=" z-30 bg-primary 
+            backdrop-blur-md text-white font-serif px-4 py-2 rounded-lg shadow-md hover:bg-tertiary transition-colors duration-200"
+            >
               <a className="text-sm" href="#sejarah">
                 Baca Sejarah Lengkap
               </a>
@@ -92,7 +95,7 @@ const SejarahSection: React.FC<SejarahSectionProps> = ({
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-amber-100/30 to-transparent" />
+      {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-ambers-100/30 to-transparent" /> */}
     </section>
   );
 };
