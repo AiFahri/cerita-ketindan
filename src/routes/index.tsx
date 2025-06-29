@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import CountdownPage from "../pages/CountdownPage";
 import Home from "../pages/Home";
 import DetailPage from "../pages/DetailPage";
+import LaunchDemo from "../pages/LaunchDemo";
 import NotFound from "../pages/NotFound";
 import Analytics from "../components/Analytics";
 
@@ -10,8 +11,10 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Analytics />
       <Routes>
-        <Route path="/" element={<CountdownPage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/countdown" element={<CountdownPage />} />
+        <Route path="/demo" element={<LaunchDemo />} />
         <Route path="/wisata/:slug" element={<DetailPage />} />
         <Route path="/peninggalan/:slug" element={<DetailPage />} />
         <Route path="/umkm/:slug" element={<DetailPage />} />
