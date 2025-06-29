@@ -1,6 +1,6 @@
 export const COUNTDOWN_CONFIG = {
   // Target launch date - format: "YYYY-MM-DDTHH:MM:SS"
-  LAUNCH_DATE: "2025-06-28T10:00:00",
+  LAUNCH_DATE: "2025-06-28T10:03:30",
 
   // Website information
   SITE_INFO: {
@@ -18,7 +18,7 @@ export const COUNTDOWN_CONFIG = {
   },
 
   REDIRECT: {
-    onComplete: "/home",
+    onComplete: "/",
     autoRedirect: true,
   },
 };
